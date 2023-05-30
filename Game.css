@@ -1,0 +1,102 @@
+body{
+  background-image: url("pingPong.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gameCanvas {
+  display: block;
+  margin: 0 auto;
+  background: linear-gradient(#88a805, #b00f7d); /* Replace these colors with your desired gradient colors */
+  box-shadow: 0 0 10px rgba(153, 102, 0, 0.8);
+}
+
+#scoreboard {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+#gameOver {
+  display: none;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: rgb(62, 59, 59);
+}
+
+#prediction {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#resultMessage {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#gameMode {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#gameMode button {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+  #gameCanvas {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Additional styles for smaller screens */
+  #scoreboard {
+    font-size: 20px;
+  }
+
+  #gameOver {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .button-group button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  #prediction {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  #gameMode button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  #restartButton {
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 16px;
+  }
+}
